@@ -1,0 +1,30 @@
+[
+    {
+      "grade": 5,
+      "quarter": 1,
+      "lang": "uz",
+      "id": "001",
+      "title": "Axborot va uning turlari"
+    },
+    {
+      "grade": 5,
+      "quarter": 1,
+      "lang": "uz",
+      "id": "002",
+      "title": "Kompyuterning asosiy qurilmalari"
+    },
+    {
+      "grade": 5,
+      "quarter": 1,
+      "lang": "qr",
+      "id": "001",
+      "title": "Informaciya hám onıń túrleri"
+    },
+    {
+      "grade": 6,
+      "quarter": 1,
+      "lang": "uz",
+      "id": "001",
+      "title": "Algoritm tushunchasi"
+    }
+  ]

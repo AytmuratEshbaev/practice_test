@@ -1,75 +1,79 @@
 // --- HOLAT (STATE) ---
 let state = {
-    class: null, 
+    class: null,
     lang: 'uz',
-    quarter: 1 
+    quarter: 1
 };
 
-// --- MA'LUMOTLAR BAZASI ---
-// "desc" maydoni olib tashlandi, faqat title, lang, quarter va url qoldi
-const topicsData = {
-    5: [
-        // 1-Chorak
-        { title: "Taqdimot Yaratish", lang: "uz", quarter: 1, url: "tests/5/ppt-uz/index.html" },
-        { title: "Создание презентаций", lang: "ru", quarter: 1, url: "tests/5/ppt-ru/index.html" },
-        
-        // 2-Chorak
-        { title: "Paint dasturi", lang: "uz", quarter: 2, url: "tests/5/paint/index.html" },
-        
-        // 3-Chorak
-        { title: "Scratch: Sprite", lang: "uz", quarter: 3, url: "tests/5/scratch/index.html" }
-    ],
-    6: [
-        { title: "Shart operatorlari (if/else)", lang: "uz", quarter: 1, url: "tests/6/cond-uz/index.html" },
-        { title: "Takrorlash operatorlari (For)", lang: "uz", quarter: 2, url: "tests/6/loops-uz/index.html" }
-    ],
-    9: [
-        { title: "Olimpiada masalalari", lang: "uz", quarter: 1, url: "tests/9/olymp/index.html" }
-    ],
-    10: [
-        { title: "Photoshop: Layers", lang: "uz", quarter: 1, url: "tests/10/ps-layers/index.html" },
-        { title: "Photoshop: Filters", lang: "uz", quarter: 2, url: "tests/10/ps-filters/index.html" }
-    ],
-    11: [
-        { title: "HTML Asoslari", lang: "uz", quarter: 1, url: "tests/11/html/index.html" }
-    ]
-};
+// Barcha mavzular shu yerga yuklanadi
+let allTopicsData = [];
 
-// --- 1. SINFNI TANLASH ---
+// --- 1. DASTUR BOSHLANISHI (JSON YUKLASH) ---
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('topics.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("JSON fayl topilmadi!");
+            }
+            return response.json();
+        })
+        .then(data => {
+            allTopicsData = data;
+            console.log("Ma'lumotlar yuklandi:", allTopicsData.length + " ta mavzu");
+        })
+        .catch(error => {
+            console.error("Xatolik:", error);
+            document.getElementById('topicsContainer').innerHTML = 
+                `<p class="empty-msg" style="color:red;">Xatolik: Ma'lumotlar bazasi (topics.json) yuklanmadi.</p>`;
+        });
+});
+
+// --- 2. SELECT FUNKSIYALARI ---
 function selectClass(classNum) {
     state.class = classNum;
-    document.querySelectorAll('.class-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if(btn.innerText.includes(classNum + "-Sinf")) btn.classList.add('active');
-    });
+    updateButtons('.class-btn', classNum + "-Sinf");
     document.getElementById('filtersSection').classList.remove('hidden');
     renderTopics();
 }
 
-// --- 2. TILNI TANLASH ---
 function selectLanguage(langCode) {
     state.lang = langCode;
-    document.querySelectorAll('.lang-btn').forEach(btn => {
+    // Buttonni topish uchun onclick atributini tekshiramiz
+    const buttons = document.querySelectorAll('.lang-btn');
+    buttons.forEach(btn => {
         btn.classList.remove('active');
-        if(btn.getAttribute('onclick').includes(langCode)) btn.classList.add('active');
+        if(btn.getAttribute('onclick').includes(`'${langCode}'`)) {
+            btn.classList.add('active');
+        }
     });
     renderTopics();
 }
 
-// --- 3. CHORAKNI TANLASH ---
 function selectQuarter(qNum) {
     state.quarter = qNum;
-    document.querySelectorAll('.quarter-btn').forEach(btn => {
+    const buttons = document.querySelectorAll('.quarter-btn');
+    buttons.forEach(btn => {
         btn.classList.remove('active');
-        if(btn.getAttribute('onclick').includes(`(${qNum})`)) btn.classList.add('active');
+        if(btn.getAttribute('onclick').includes(`(${qNum})`)) {
+            btn.classList.add('active');
+        }
     });
     renderTopics();
 }
 
-// --- EKRANGA CHIQARISH ---
+// Yordamchi funksiya: Tugmalar aktivligini o'zgartirish
+function updateButtons(selector, searchText) {
+    const buttons = document.querySelectorAll(selector);
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+        if(btn.innerText.includes(searchText)) btn.classList.add('active');
+    });
+}
+
+// --- 3. EKRANGA CHIQARISH VA URL AVTOMATLASHTIRISH ---
 function renderTopics() {
     const container = document.getElementById('topicsContainer');
-    container.classList.remove('show'); 
+    container.classList.remove('show');
 
     setTimeout(() => {
         container.innerHTML = "";
@@ -80,34 +84,40 @@ function renderTopics() {
             return;
         }
 
-        const allTopics = topicsData[state.class] || [];
-        
-        const filteredTopics = allTopics.filter(topic => 
-            topic.lang === state.lang && 
+        // FILTRLASH
+        // JSON dagi "grade", "lang", "quarter" bo'yicha saralaymiz
+        const filteredTopics = allTopicsData.filter(topic => 
+            topic.grade === state.class &&
+            topic.lang === state.lang &&
             topic.quarter === state.quarter
         );
 
         if (filteredTopics.length > 0) {
             filteredTopics.forEach(topic => {
+                // --- LINKNI AVTOMATIK YASASH ---
+                // FORMULA: tests/grade_5/quarter_1/uz/001/index.html
+                const dynamicUrl = `tests/grade_${topic.grade}/quarter_${topic.quarter}/${topic.lang}/${topic.id}/index.html`;
+
                 const card = document.createElement('a');
                 card.className = 'topic-card';
-                card.href = topic.url;
-                // Description qismi olib tashlandi
+                card.href = dynamicUrl;
+                
                 card.innerHTML = `
                     <div>
                         <div class="topic-title">${topic.title}</div>
                     </div>
                     <div class="card-footer">
-                        <span class="meta-info">${state.quarter}-chorak</span>
+                        <span class="meta-info">ID: ${topic.id}</span>
                         <span class="start-link">Boshlash &rarr;</span>
                     </div>
                 `;
                 container.appendChild(card);
             });
         } else {
+            let langText = state.lang === 'uz' ? "o'zbek" : state.lang === 'qr' ? "qoraqalpoq" : "rus";
             container.innerHTML = `
                 <div class="empty-msg">
-                    <p>Ushbu chorakda testlar topilmadi.</p>
+                    <p>${state.class}-sinf, ${state.quarter}-chorak uchun ${langText} tilida testlar hali kiritilmagan.</p>
                 </div>`;
         }
         container.classList.add('show');
