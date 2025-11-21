@@ -349,63 +349,77 @@ footer {
 /* ... Qolgan stylelar ... */
 
 /* --- STATUS BADGE (YANGI) --- */
+/* --- KARTA (ASOSIY) --- */
+/* --- KARTA (ASOSIY) --- */
+.topic-card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+    
+    /* --- YANGI QOIDALAR --- */
+    display: flex;
+    flex-direction: column; /* Elementlarni ustma-ust joylash */
+    height: 100%;           /* Grid katakchasi ichida to'liq balandlik */
+    justify-content: space-between; /* Ichidagilarni chiroyli yoyish */
+}
+
+.topic-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+/* --- SARLAVHA (TITLE) --- */
+.topic-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    line-height: 1.4; /* Qatorlar orasi */
+    
+    /* --- MUHIM: TEKISLASH UCHUN --- */
+    /* 1. Minimal balandlik beramiz (taxminan 3 qator matn sig'adigan joy) */
+    min-height: 4.2em; 
+    
+    /* 2. Agar matn juda uzun bo'lsa, 3 qatordan oshirmaymiz va '...' qo'yamiz */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+    margin-bottom: 10px;
+}
+
 /* --- STATUS BADGE (YANGILANGAN) --- */
 .status-badge {
-    font-size: 0.75rem;  /* Yozuvni kichraytiramiz (12px) */
-    padding: 4px 12px;   /* Ichki masofa */
-    border-radius: 6px;  /* Juda yumaloq emas, chiroyli burchak */
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 6px;
     display: inline-flex; 
     align-items: center;
-    justify-content: center;
-    gap: 6px;            /* Ikonka va yozuv orasi */
-    font-weight: 700;    /* Qalinroq shrift */
-    margin-top: 8px;     /* Sarlavhadan biroz pastga tushiramiz */
-    margin-bottom: 5px;
-    text-transform: uppercase; /* Harflarni katta qilish (PROFESSIONAL KO'RINISH) */
-    letter-spacing: 0.5px;     /* Harflar orasini ochish */
+    gap: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    /* Status o'z joyida turishi uchun */
+    margin-bottom: 15px; 
+    align-self: flex-start; /* Chap tomonga yopishtirish */
 }
 
-/* Yashil (Fayl bor) */
-.status-success {
-    background-color: #dcfce7;
-    color: #15803d; /* To'q yashil */
-    border: 1px solid #bbf7d0;
-}
-
-/* Qizil (Fayl yo'q) */
-.status-error {
-    background-color: #fee2e2;
-    color: #b91c1c; /* To'q qizil */
-    border: 1px solid #fecaca;
-}
-
-/* Loading */
-.status-loading {
-    background-color: #f1f5f9;
-    color: #64748b;
-    border: 1px solid #e2e8f0;
-    font-style: normal;
-    animation: pulse 1.5s infinite; /* "Puls" animatsiyasi */
-}
-
-/* Puls animatsiyasi (Loading uchun) */
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.6; }
-    100% { opacity: 1; }
-}
-
-/* --- KARTA SOZLAMASI (Muhim) --- */
-/* Kartani ichidagi elementlar chapdan tekislanishi uchun */
-.topic-card {
+/* --- FOOTER (ENG PASTKI QISM) --- */
+.card-footer {
+    /* Bu qoida footerni har doim eng pastga itaradi */
+    margin-top: auto; 
+    
+    border-top: 1px solid #f1f5f9;
+    padding-top: 12px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left; /* Chapga tekislash */
-    align-items: flex-start; /* Chapga yopishtirish */
-    /* Qolgan eski stylelar qolaveradi... */
+    justify-content: space-between; /* ID chapda, tugma o'ngda */
+    align-items: center;
 }
 
-.topic-card > div {
-    width: 100%; /* Ichki div to'liq kenglikda bo'lsin */
-}
+/* Qolgan ranglar (status-success, status-error) o'zgarishsiz qoladi... */
+/* Qolgan ranglar (status-success, status-error) o'zgarishsiz qoladi... */
