@@ -16,19 +16,26 @@
 
     <main>
         <h1>Bilimingizni sinab ko'ring</h1>
-        <p class="subtitle">Test ishlash uchun avval sinfingizni tanlang:</p>
+        <p class="subtitle">Test ishlash uchun sinf va tilni tanlang:</p>
 
+        <div class="selector-label">Sinfni tanlang:</div>
         <div class="class-selector">
-            <button class="class-btn" onclick="filterTopics(5)">5-Sinf</button>
-            <button class="class-btn" onclick="filterTopics(6)">6-Sinf</button>
-            <button class="class-btn" onclick="filterTopics(7)">7-Sinf</button>
-            <button class="class-btn" onclick="filterTopics(8)">8-Sinf</button>
-            <button class="class-btn" onclick="filterTopics(9)">9-Sinf</button>
-            <button class="class-btn" onclick="filterTopics(10)">10-Sinf</button>
-            <button class="class-btn" onclick="filterTopics(11)">11-Sinf</button>
+            <button class="class-btn" onclick="selectClass(5)">5-Sinf</button>
+            <button class="class-btn" onclick="selectClass(6)">6-Sinf</button>
+            <button class="class-btn" onclick="selectClass(9)">9-Sinf</button>
+            <button class="class-btn" onclick="selectClass(10)">10-Sinf</button>
+            <button class="class-btn" onclick="selectClass(11)">11-Sinf</button>
         </div>
 
-        
+        <div id="langSection" class="language-section hidden">
+            <div class="selector-label">Test tilini tanlang:</div>
+            <div class="language-selector">
+                <button class="lang-btn active" onclick="selectLanguage('uz')">🇺🇿 O'zbek</button>
+                <button class="lang-btn" onclick="selectLanguage('ru')">🇷🇺 Rus</button>
+                <button class="lang-btn" onclick="selectLanguage('en')">🇬🇧 English</button>
+            </div>
+        </div>
+
         <div id="topicsContainer" class="topics-container">
             <p class="empty-msg">Mavzularni ko'rish uchun yuqoridagi sinflardan birini tanlang.</p>
         </div>

@@ -1,59 +1,102 @@
+// --- HOLAT (STATE) ---
+// Hozir qaysi sinf va til tanlangani shu yerda saqlanadi
+let state = {
+    class: null, // Boshida tanlanmagan
+    lang: 'uz'   // Boshlang'ich til: O'zbek
+};
+
 // --- MA'LUMOTLAR BAZASI ---
-// 'url' qismiga iSpring publish qilgan html faylga to'g'ri yo'l ko'rsating
+// Har bir mavzuga "lang" parametri qo'shildi
 const topicsData = {
     5: [
-        { title: "Taqdimot Yaratish", desc: "PowerPoint asoslari va slaydlarni bezash", url: "tests/5-sinf/ppt-basics/index.html" },
-        { title: "C++ ga kirish", desc: "Sintaksis va ma'lumot turlari", url: "tests/5-sinf/cpp-intro/index.html" }
+        { title: "Taqdimot Yaratish", desc: "PowerPoint asoslari", lang: "uz", url: "tests/5/ppt-uz/index.html" },
+        { title: "Создание презентаций", desc: "Основы PowerPoint", lang: "ru", url: "tests/5/ppt-ru/index.html" },
+        { title: "C++ ga kirish", desc: "Sintaksis va turlar", lang: "uz", url: "tests/5/cpp-uz/index.html" }
     ],
     6: [
-        { title: "Shart operatorlari", desc: "if, else va switch operatorlari (C++)", url: "tests/6-sinf/conditions/index.html" },
-        { title: "Takrorlash operatorlari", desc: "For va While tsikllari", url: "tests/6-sinf/loops/index.html" }
+        { title: "Shart operatorlari", desc: "if/else (C++)", lang: "uz", url: "tests/6/cond-uz/index.html" },
+        { title: "Условные операторы", desc: "if/else (C++)", lang: "ru", url: "tests/6/cond-ru/index.html" },
+        { title: "Takrorlash operatorlari", desc: "For va While", lang: "uz", url: "tests/6/loops-uz/index.html" }
     ],
     9: [
-        { title: "Olimpiada masalalari", desc: "Kirish-chiqarish va oddiy masalalar", url: "tests/9-sinf/olympiad-1/index.html" }
+        { title: "Olimpiada masalalari", desc: "Kirish-chiqarish", lang: "uz", url: "tests/9/olymp-uz/index.html" },
+        { title: "Olympiad Problems", desc: "Input-Output basics", lang: "en", url: "tests/9/olymp-en/index.html" }
     ],
     10: [
-        { title: "Photoshop: Layers", desc: "Qatlamlar bilan ishlash texnikasi", url: "tests/10-sinf/ps-layers/index.html" },
-        { title: "Photoshop: Selection", desc: "Ajratib olish uskunalari", url: "tests/10-sinf/ps-select/index.html" }
+        { title: "Photoshop: Layers", desc: "Qatlamlar bilan ishlash", lang: "uz", url: "tests/10/ps-uz/index.html" }
     ],
     11: [
-        { title: "Web Dasturlash", desc: "HTML va CSS strukturalari", url: "tests/11-sinf/web-intro/index.html" }
+        { title: "Web Dasturlash", desc: "HTML va CSS", lang: "uz", url: "tests/11/web-uz/index.html" }
     ]
 };
 
-// --- FUNKSIYA ---
-function filterTopics(sinf) {
-    const container = document.getElementById('topicsContainer');
-    const buttons = document.querySelectorAll('.class-btn');
+// --- 1. SINFNI TANLASH ---
+function selectClass(classNum) {
+    state.class = classNum;
     
-    // 1. Tugmalarni faol holatini o'zgartirish
+    // Sinf tugmalarini yangilash
+    const buttons = document.querySelectorAll('.class-btn');
     buttons.forEach(btn => {
         btn.classList.remove('active');
-        // Tugma matnida sinf raqami borligini tekshiramiz
-        if(btn.innerText.includes(sinf + "-Sinf")) {
+        if(btn.innerText.includes(classNum + "-Sinf")) {
             btn.classList.add('active');
         }
     });
 
-    // 2. Konteynerni vaqtincha yashirish (animatsiya uchun)
+    // Til bo'limini ko'rsatish (agar yashirin bo'lsa)
+    document.getElementById('langSection').classList.remove('hidden');
+
+    // Natijani yangilash
+    renderTopics();
+}
+
+// --- 2. TILNI TANLASH ---
+function selectLanguage(langCode) {
+    state.lang = langCode;
+
+    // Til tugmalarini yangilash
+    const buttons = document.querySelectorAll('.lang-btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+        // Tugma onclick funksiyasini tekshirib active qilamiz
+        if(btn.getAttribute('onclick').includes(langCode)) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Natijani yangilash
+    renderTopics();
+}
+
+// --- 3. EKRANGA CHIQARISH (RENDER) ---
+function renderTopics() {
+    const container = document.getElementById('topicsContainer');
+
+    // 1. Animatsiya uchun yashiramiz
     container.classList.remove('show');
-    
-    // 3. Kichik kechikishdan so'ng ma'lumotni yangilash
+
     setTimeout(() => {
-        container.innerHTML = ""; // Ichini tozalash
+        container.innerHTML = ""; // Tozalash
 
-        const data = topicsData[sinf];
+        // Agar sinf tanlanmagan bo'lsa
+        if (!state.class) {
+            container.innerHTML = `<p class="empty-msg">Iltimos, avval sinfni tanlang.</p>`;
+            container.classList.add('show');
+            return;
+        }
 
-        if (data && data.length > 0) {
-            // Mavzular bor bo'lsa, ularni yaratish
-            data.forEach(topic => {
+        // Ma'lumotlarni olamiz
+        const allTopics = topicsData[state.class] || [];
+        
+        // Filtrlash: Sinf ichidan faqat tanlangan TILdagi mavzularni olamiz
+        const filteredTopics = allTopics.filter(topic => topic.lang === state.lang);
+
+        if (filteredTopics.length > 0) {
+            filteredTopics.forEach(topic => {
                 const card = document.createElement('a');
                 card.className = 'topic-card';
-                // Havola
                 card.href = topic.url;
-                // Testni yangi oynada ochish uchun (ixtiyoriy):
-                // card.target = "_blank"; 
-
+                
                 card.innerHTML = `
                     <div>
                         <div class="topic-title">${topic.title}</div>
@@ -64,11 +107,11 @@ function filterTopics(sinf) {
                 container.appendChild(card);
             });
         } else {
-            // Agar mavzu bo'lmasa
-            container.innerHTML = `<p class="empty-msg">Bu sinf uchun hozircha testlar yuklanmagan.</p>`;
+            container.innerHTML = `<p class="empty-msg">Bu sinf va til uchun testlar topilmadi.</p>`;
         }
 
-        // 4. Qayta ko'rsatish
+        // 2. Qayta ko'rsatamiz
         container.classList.add('show');
-    }, 200); 
+
+    }, 200);
 }
