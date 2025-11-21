@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maktab Test Platformasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <span>🏫 IT School Tests</span>
+        </a>
+    </header>
+
+    <main>
+        <h1>Bilimingizni sinab ko'ring</h1>
+        <p class="subtitle">Test ishlash uchun avval sinfingizni tanlang:</p>
+
+        <div class="class-selector">
+            <button class="class-btn" onclick="filterTopics(5)">5-Sinf</button>
+            <button class="class-btn" onclick="filterTopics(6)">6-Sinf</button>
+            <button class="class-btn" onclick="filterTopics(7)">7-Sinf</button>
+            <button class="class-btn" onclick="filterTopics(8)">8-Sinf</button>
+            <button class="class-btn" onclick="filterTopics(9)">9-Sinf</button>
+            <button class="class-btn" onclick="filterTopics(10)">10-Sinf</button>
+            <button class="class-btn" onclick="filterTopics(11)">11-Sinf</button>
+        </div>
+
+        
+        <div id="topicsContainer" class="topics-container">
+            <p class="empty-msg">Mavzularni ko'rish uchun yuqoridagi sinflardan birini tanlang.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 IT Maktab. Barcha huquqlar himoyalangan.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
