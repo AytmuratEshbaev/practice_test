@@ -1,117 +1,115 @@
 // --- HOLAT (STATE) ---
-// Hozir qaysi sinf va til tanlangani shu yerda saqlanadi
 let state = {
-    class: null, // Boshida tanlanmagan
-    lang: 'uz'   // Boshlang'ich til: O'zbek
+    class: null, 
+    lang: 'uz',
+    quarter: 1 
 };
 
 // --- MA'LUMOTLAR BAZASI ---
-// Har bir mavzuga "lang" parametri qo'shildi
+// "desc" maydoni olib tashlandi, faqat title, lang, quarter va url qoldi
 const topicsData = {
     5: [
-        { title: "Taqdimot Yaratish", desc: "PowerPoint asoslari", lang: "uz", url: "tests/5/ppt-uz/index.html" },
-        { title: "Создание презентаций", desc: "Основы PowerPoint", lang: "ru", url: "tests/5/ppt-ru/index.html" },
-        { title: "C++ ga kirish", desc: "Sintaksis va turlar", lang: "uz", url: "tests/5/cpp-uz/index.html" }
+        // 1-Chorak
+        { title: "Taqdimot Yaratish", lang: "uz", quarter: 1, url: "tests/5/ppt-uz/index.html" },
+        { title: "Создание презентаций", lang: "ru", quarter: 1, url: "tests/5/ppt-ru/index.html" },
+        
+        // 2-Chorak
+        { title: "Paint dasturi", lang: "uz", quarter: 2, url: "tests/5/paint/index.html" },
+        
+        // 3-Chorak
+        { title: "Scratch: Sprite", lang: "uz", quarter: 3, url: "tests/5/scratch/index.html" }
     ],
     6: [
-        { title: "Shart operatorlari", desc: "if/else (C++)", lang: "uz", url: "tests/6/cond-uz/index.html" },
-        { title: "Условные операторы", desc: "if/else (C++)", lang: "ru", url: "tests/6/cond-ru/index.html" },
-        { title: "Takrorlash operatorlari", desc: "For va While", lang: "uz", url: "tests/6/loops-uz/index.html" }
+        { title: "Shart operatorlari (if/else)", lang: "uz", quarter: 1, url: "tests/6/cond-uz/index.html" },
+        { title: "Takrorlash operatorlari (For)", lang: "uz", quarter: 2, url: "tests/6/loops-uz/index.html" }
     ],
     9: [
-        { title: "Olimpiada masalalari", desc: "Kirish-chiqarish", lang: "uz", url: "tests/9/olymp-uz/index.html" },
-        { title: "Olympiad Problems", desc: "Input-Output basics", lang: "en", url: "tests/9/olymp-en/index.html" }
+        { title: "Olimpiada masalalari", lang: "uz", quarter: 1, url: "tests/9/olymp/index.html" }
     ],
     10: [
-        { title: "Photoshop: Layers", desc: "Qatlamlar bilan ishlash", lang: "uz", url: "tests/10/ps-uz/index.html" }
+        { title: "Photoshop: Layers", lang: "uz", quarter: 1, url: "tests/10/ps-layers/index.html" },
+        { title: "Photoshop: Filters", lang: "uz", quarter: 2, url: "tests/10/ps-filters/index.html" }
     ],
     11: [
-        { title: "Web Dasturlash", desc: "HTML va CSS", lang: "uz", url: "tests/11/web-uz/index.html" }
+        { title: "HTML Asoslari", lang: "uz", quarter: 1, url: "tests/11/html/index.html" }
     ]
 };
 
 // --- 1. SINFNI TANLASH ---
 function selectClass(classNum) {
     state.class = classNum;
-    
-    // Sinf tugmalarini yangilash
-    const buttons = document.querySelectorAll('.class-btn');
-    buttons.forEach(btn => {
+    document.querySelectorAll('.class-btn').forEach(btn => {
         btn.classList.remove('active');
-        if(btn.innerText.includes(classNum + "-Sinf")) {
-            btn.classList.add('active');
-        }
+        if(btn.innerText.includes(classNum + "-Sinf")) btn.classList.add('active');
     });
-
-    // Til bo'limini ko'rsatish (agar yashirin bo'lsa)
-    document.getElementById('langSection').classList.remove('hidden');
-
-    // Natijani yangilash
+    document.getElementById('filtersSection').classList.remove('hidden');
     renderTopics();
 }
 
 // --- 2. TILNI TANLASH ---
 function selectLanguage(langCode) {
     state.lang = langCode;
-
-    // Til tugmalarini yangilash
-    const buttons = document.querySelectorAll('.lang-btn');
-    buttons.forEach(btn => {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
-        // Tugma onclick funksiyasini tekshirib active qilamiz
-        if(btn.getAttribute('onclick').includes(langCode)) {
-            btn.classList.add('active');
-        }
+        if(btn.getAttribute('onclick').includes(langCode)) btn.classList.add('active');
     });
-
-    // Natijani yangilash
     renderTopics();
 }
 
-// --- 3. EKRANGA CHIQARISH (RENDER) ---
+// --- 3. CHORAKNI TANLASH ---
+function selectQuarter(qNum) {
+    state.quarter = qNum;
+    document.querySelectorAll('.quarter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if(btn.getAttribute('onclick').includes(`(${qNum})`)) btn.classList.add('active');
+    });
+    renderTopics();
+}
+
+// --- EKRANGA CHIQARISH ---
 function renderTopics() {
     const container = document.getElementById('topicsContainer');
-
-    // 1. Animatsiya uchun yashiramiz
-    container.classList.remove('show');
+    container.classList.remove('show'); 
 
     setTimeout(() => {
-        container.innerHTML = ""; // Tozalash
+        container.innerHTML = "";
 
-        // Agar sinf tanlanmagan bo'lsa
         if (!state.class) {
             container.innerHTML = `<p class="empty-msg">Iltimos, avval sinfni tanlang.</p>`;
             container.classList.add('show');
             return;
         }
 
-        // Ma'lumotlarni olamiz
         const allTopics = topicsData[state.class] || [];
         
-        // Filtrlash: Sinf ichidan faqat tanlangan TILdagi mavzularni olamiz
-        const filteredTopics = allTopics.filter(topic => topic.lang === state.lang);
+        const filteredTopics = allTopics.filter(topic => 
+            topic.lang === state.lang && 
+            topic.quarter === state.quarter
+        );
 
         if (filteredTopics.length > 0) {
             filteredTopics.forEach(topic => {
                 const card = document.createElement('a');
                 card.className = 'topic-card';
                 card.href = topic.url;
-                
+                // Description qismi olib tashlandi
                 card.innerHTML = `
                     <div>
                         <div class="topic-title">${topic.title}</div>
-                        <div class="topic-meta">${topic.desc}</div>
                     </div>
-                    <div class="start-btn">Boshlash &rarr;</div>
+                    <div class="card-footer">
+                        <span class="meta-info">${state.quarter}-chorak</span>
+                        <span class="start-link">Boshlash &rarr;</span>
+                    </div>
                 `;
                 container.appendChild(card);
             });
         } else {
-            container.innerHTML = `<p class="empty-msg">Bu sinf va til uchun testlar topilmadi.</p>`;
+            container.innerHTML = `
+                <div class="empty-msg">
+                    <p>Ushbu chorakda testlar topilmadi.</p>
+                </div>`;
         }
-
-        // 2. Qayta ko'rsatamiz
         container.classList.add('show');
-
     }, 200);
 }
