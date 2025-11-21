@@ -1,30 +1,2858 @@
 [
     {
-      "grade": 5,
-      "quarter": 1,
-      "lang": "uz",
-      "id": "001",
-      "title": "Axborot va uning turlari"
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "001",
+        "title": "Xavfsizlik texnikasi qoidalari"
     },
     {
-      "grade": 5,
-      "quarter": 1,
-      "lang": "uz",
-      "id": "002",
-      "title": "Kompyuterning asosiy qurilmalari"
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "002",
+        "title": "Informatika fanining maqsad va vazifalari"
     },
     {
-      "grade": 5,
-      "quarter": 1,
-      "lang": "qr",
-      "id": "001",
-      "title": "Informaciya hám onıń túrleri"
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "003",
+        "title": "EHM larning rivojlanish tarixi. Kompyuterning turlari"
     },
     {
-      "grade": 6,
-      "quarter": 1,
-      "lang": "uz",
-      "id": "001",
-      "title": "Algoritm tushunchasi"
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "004",
+        "title": "Kompyuter va uning tuzilishi"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "005",
+        "title": "Ichki va tashqi qurilmalari"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "006",
+        "title": "Axborot haqida tushuncha"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "007",
+        "title": "Axborot o'lchov birliklari"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "008",
+        "title": "Fayl va katalog bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "009",
+        "title": "Fayl va katalog ustida amallar"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "010",
+        "title": "Klaviatura va tugmachalar klassifikatsiyasi"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "011",
+        "title": "Klaviatura bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "012",
+        "title": "BSB-1 [20 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "013",
+        "title": "Elektron hujjat va u bilan ishlovchi dasturlar"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "014",
+        "title": "MS Word dasturida yangi hujjat yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "015",
+        "title": "Matnlar ustida amallar"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "016",
+        "title": "Matn ko'rinishi formatlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "017",
+        "title": "Elektron hujjat paramertlarini sozlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "018",
+        "title": "Tarjimai hol yozish"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "019",
+        "title": "Elektron hujjatda ro’yhatlar bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "020",
+        "title": "Jadvallar hosil qilish va tahrirlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "021",
+        "title": "Jadvalning ustun va qatorlari bilan amallar bajarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "022",
+        "title": "Hujjatlarda grafik ob’yektlarni boshqarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "023",
+        "title": "Hujjatda rasmlarni formatlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "024",
+        "title": "Standart geometrik shakllar bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "025",
+        "title": "Formulalar bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "026",
+        "title": "BSB-2 [30 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "027",
+        "title": "CHSB-1 [40 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "028",
+        "title": "Ma'lumotlarni vizual taqdim etish texnologiyasi"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "029",
+        "title": "MS PowerPoint dasturi va unda yangi taqdimot yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "030",
+        "title": "Taqdimotlar ustida amallar"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "031",
+        "title": "Maketlar bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "032",
+        "title": "Slayd maketlaridan foydalanish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "033",
+        "title": "Slayd maketlarini formatlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "034",
+        "title": "Tashqi obyektlar bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "035",
+        "title": "Taqdimotga media obyektlarni joylashtirish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "036",
+        "title": "Taqdimotga ovoz va videolar joylashtirish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "037",
+        "title": "BSB-3 [20 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "038",
+        "title": "Animatsiyalarni boshqarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "039",
+        "title": "Taqdimotga turli animatsiyalar berish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "040",
+        "title": "Gipermurojaatlar orqali taqdimot ob'yektlarini boshqarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "041",
+        "title": "Taqdimotga boshqa fayllarni qo`shish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "042",
+        "title": "Standart shablonlardan foydalanish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "043",
+        "title": "Standart shablonlardan foydalanib taqdimot yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "044",
+        "title": "Standart shablonlardan foydalanib taqdimot yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "045",
+        "title": "Taqdimotga yangi dizayn qo`shish"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "046",
+        "title": "Taqdimotlarni turli ko`rinishda saqlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "047",
+        "title": "Loyiha ishi [30 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "048",
+        "title": "CHSB-2 [40 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "049",
+        "title": "Dastur va dasturlash tushunchasi"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "050",
+        "title": "Scratch dasturlash muhiti"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "051",
+        "title": "Scratch ob'yekti Sprayt"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "052",
+        "title": "Scratch dasturida sahnalar bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "053",
+        "title": "Koordinatalar sistemasi. Spraytlarni kordinata o‘qlari bo‘ylab harakatlantirish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "054",
+        "title": "Spraytlarni harakatlantirish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "055",
+        "title": "Sprayt ustida sodda harakat amallarini bajarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "056",
+        "title": "Tarmoqlanuvchi skriptlardan foydalanish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "057",
+        "title": "Sezgirlik blokidan foydalanish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "058",
+        "title": "Spraytni kursor va klaviatura orqali boshqarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "059",
+        "title": "Bir nechta shart asosida bajariladigan jarayonni dasturlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "060",
+        "title": "Takrorlash bloklari imkoniyatlari"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "061",
+        "title": "Takrorlanuvchi jarayonli dasturlar yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "062",
+        "title": "BSB-5 [20 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "063",
+        "title": "Bir necha spraytlarni boshqarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "064",
+        "title": "Bir nechta spraytga turli xil skript qo‘llash"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "065",
+        "title": "Takrorlanish bloklarini qo‘llab spraytni to‘g‘ri chiziq bo‘ylab harakatlantirish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "066",
+        "title": "Multfilm uchun kerakli harakatlar ketma-ketligini yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "067",
+        "title": "Amaliy mashg‘ulot"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "068",
+        "title": "Amaliy mashg‘ulot"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "069",
+        "title": "O‘yin qoidalarini ishlab chiqish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "070",
+        "title": "Amaliy mashg‘ulot"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "071",
+        "title": "Ovoz bloki bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "072",
+        "title": "Ovozli fayllar ustida amallar bajarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "073",
+        "title": "Sprayt harakatiga ovozli faylni moslashtirish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "074",
+        "title": "Qalam blokidan foydalanish."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "075",
+        "title": "Qalam blokidan foydalanib tasvirlar yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "076",
+        "title": "Loyiha ishi"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "077",
+        "title": "Loyiha ishi [30 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "078",
+        "title": "CHSB-3 [40 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "079",
+        "title": "Dasturlashda o`zgaruvchilar"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "080",
+        "title": "O‘zgaruvchilar bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "081",
+        "title": "Scratch dasturida matematik amallar"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "082",
+        "title": "Matematik amallar bloki bilan ishlash"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "083",
+        "title": "Mantiqiy amallardan foydalanish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "084",
+        "title": "Matnlar ustida amallar bajarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "085",
+        "title": "Tarmoqlanuvchi jarayonlar asosida dasturlar yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "086",
+        "title": "Takrorlanuvchi jarayonlar asosida dasturlar yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "087",
+        "title": "Aralash jarayonlar asosida dasturlar yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "088",
+        "title": "Sprayt klonlarini yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "089",
+        "title": "Klonlar ustida amallar bajarish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "090",
+        "title": "BSB-7 [20 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "091",
+        "title": "Scratch muhitida ro‘yhatlar bilan ishlash."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "092",
+        "title": "Bir ro‘yxat bilan boshqa ro‘yxatlarni bog‘lash"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "093",
+        "title": "Scratchda muloqat dasturlari yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "094",
+        "title": "Interaktiv muloqot oynasini hosil qilish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "095",
+        "title": "Scratch dasturida yangi blok hosil qilish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "096",
+        "title": "Scratch dasturida yangi blok hosil qilish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "097",
+        "title": "Scratch dasturida tarjimon blokini qo’llash"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "098",
+        "title": "Scratch dasturida tarjimon blokini qo’llash"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "099",
+        "title": "Ko‘p bosqichli o‘yin yaratish"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "100",
+        "title": "Loyiha ishi"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "101",
+        "title": "Loyiha ishi [30 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "102",
+        "title": "CHSB-4 [40 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "001",
+        "title": "Qáwipsizlik texnikası qaǵıydaları"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "002",
+        "title": "Informatika pániniń maqset hám wazıypaları."
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "003",
+        "title": "EEM lardıń rawajlanıw tariyxı. Kompyuterdiń túrleri"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "004",
+        "title": "Kompyuter hám oniń dúzilisi."
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "005",
+        "title": "Ishki hám sırtqı qurılmaları"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "006",
+        "title": "Informaciya haqqında túsinik"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "007",
+        "title": "Informaciya ólshew birlikleri"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "008",
+        "title": "Fayl hám katalog penen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "009",
+        "title": "Fayl hám katalog ústinde ámeller."
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "010",
+        "title": "Klaviatura hám túymesheler klassifikaciyası."
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "011",
+        "title": "Klaviatura menen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "012",
+        "title": "BSB-1 [20 ball]."
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "013",
+        "title": "Elektron hújjet hám onıń menen islewshi programmalar."
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "014",
+        "title": "MS Word programmasında jana hújjet jaratıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "015",
+        "title": "Tekstler ústinde ámeller"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "016",
+        "title": "Tekst kórinisin formatlaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "017",
+        "title": "Elektron hújjet parametrlerin sazlaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "018",
+        "title": "Ómirbayan jazıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "019",
+        "title": "Elektron hújjette dizimler menen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "020",
+        "title": "Kestelerdi payda etiw hám redaktorlaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "021",
+        "title": "Kesteniń bagana hám qatarları menen ámeller orınlaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "022",
+        "title": "Hújjetlerde grafikalıq obyektlerdi basqarıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "023",
+        "title": "Hújjette súwretlerdi formatlaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "024",
+        "title": "Standart geometriyalıq figuralar menen islew."
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "025",
+        "title": "Formulalar menen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "026",
+        "title": "BSB-2 [30 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "027",
+        "title": "SHSB-1 [40 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "028",
+        "title": "Magliwmatlardı vizual kórsetiw texnologiyası."
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "029",
+        "title": "MS PowerPoint baǵdarlaması hám onda jańa kórgizbe jaratıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "030",
+        "title": "Kórgizbeler ústinde ámeller"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "031",
+        "title": "Maketler menen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "032",
+        "title": "Slayd maketlerinen paydalanıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "033",
+        "title": "Slayd maketlerin formatlaw."
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "034",
+        "title": "Sırtqı obyektler menen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "035",
+        "title": "Prezentaciyaǵa media obyektlerdi jaylastırıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "036",
+        "title": "Prezentaciyaǵa dawıs hám videolar jaylastırıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "037",
+        "title": "BSB-3 [20 ball]."
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "038",
+        "title": "Animaciyalardı basqarıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "039",
+        "title": "Prezentaciyaǵa túrli animaciyalar beriw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "040",
+        "title": "Gipermúrájáátler arqalı prezentaciya obyektlerin basqarıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "041",
+        "title": "Prezentaciyaǵa basqa fayllardı qosıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "042",
+        "title": "Standart shablonlardan paydalanıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "043",
+        "title": "Standart shablonlardan paydalanıp prezentaciya jaratıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "044",
+        "title": "Standart shablonlardan paydalanıp prezentaciya jaratıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "045",
+        "title": "Prezentaciyaǵa jańa dizayn qosıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "046",
+        "title": "Kórgizbelerdi túrli kóriniste saqlaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "047",
+        "title": "Joybar jumısı [30 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "048",
+        "title": "SHSB-2 [40 ball]."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "049",
+        "title": "Programma hám programmalastırıw túsinigi."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "050",
+        "title": "Scratch programmalastırıw ortalıǵı"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "051",
+        "title": "Scratch obyekti Sprayt"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "052",
+        "title": "Scratch programmasında saxnalar menen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "053",
+        "title": "Koordinatalar sisteması. Spraytlardı koordinata kósherleri boylap háreketlendiriw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "054",
+        "title": "Spraytlardı háreketlendiriw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "055",
+        "title": "Sprayt ústinde ápiwayı háreket ámellerin orinlaw."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "056",
+        "title": "Tarmaqlanıwshı skriptlerden paydalanıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "057",
+        "title": "Sezgirlik blogınan paydalanıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "058",
+        "title": "Sprayttı kursor hám klaviatura arqalı basqarıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "059",
+        "title": "Bir neshe shárt tiykarında orınlanatuģın procesti programmalastırıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "060",
+        "title": "Tákirarlaw blokları imkaniyatları"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "061",
+        "title": "Tákirarlanıwshı procesli programmalar jaratıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "062",
+        "title": "BSB-5 [20 ball]."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "063",
+        "title": "Bir neshe spraytlardı basqarıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "064",
+        "title": "Birneshe spraytqa túrli skript qollaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "065",
+        "title": "Tákirarlanıwshı blokların qollanıp sprayttı tuwrı sızıq boylap háreketlendiriw."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "066",
+        "title": "Multfilm ushin kerekli háreketler izbe-izligin jaratıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "067",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "068",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "069",
+        "title": "Oyın qaǵıydaların islep shıǵıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "070",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "071",
+        "title": "Dawıs blogi menen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "072",
+        "title": "Dawıslı fayllar ústinde ámeller orınlaw."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "073",
+        "title": "Sprayt háreketine dawıslı fayldı sáykeslestiriw"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "074",
+        "title": "Qálem blogınan paydalanıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "075",
+        "title": "Qálem blogı"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "076",
+        "title": "Joybar jumısı"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "077",
+        "title": "Loyiha ishi [30 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "078",
+        "title": "SHSB-3 [40 ball]."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "079",
+        "title": "Programmalastırıwda ózgeriwshiler"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "080",
+        "title": "Ózgeriwshiler menen islew"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "081",
+        "title": "Scratch programmasında matematikalıq ámeller."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "082",
+        "title": "Matematikalıq ámeller blogı menen islew."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "083",
+        "title": "Logikalıq ámellerden paydalanıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "084",
+        "title": "Tekstler ústinde ámeller orınlaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "085",
+        "title": "Tarmaqlanıwshı procesler tiykarında programmalar islep shıǵıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "086",
+        "title": "Tákirarlanıwshı procesler tiykarında programmalar jaratıw."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "087",
+        "title": "Aralas procesler tiykarında programmalar islep shıǵıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "088",
+        "title": "Sprayt klonların islep shıǵıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "089",
+        "title": "Klonlar ústinde ámeller orınlaw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "090",
+        "title": "BSB-7 [20 ball]."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "091",
+        "title": "Scratch ortalıǵında dizimler menen islew."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "092",
+        "title": "Bir dizim menen basqa dizimlerdi baylanıstırıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "093",
+        "title": "Scratchta baylanıs programmaların jaratıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "094",
+        "title": "Interaktiv dialog aynasın payda etiw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "095",
+        "title": "Scratch programmasında jana blok payda etiw."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "096",
+        "title": "Scratch programmasında jana blok payda etiw."
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "097",
+        "title": "Scratch programmasında awdarmashı blogın qollanıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "098",
+        "title": "Scratch programmasında awdarmashı blogın qollanıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "099",
+        "title": "Kóp basqıshlı oyın islep shıǵıw"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "100",
+        "title": "Joybar jumısı"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "101",
+        "title": "Joybar jumısı [30 ball]"
+    },
+    {
+        "grade": 5,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "102",
+        "title": "SHSB-4 [40 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "001",
+        "title": "Elektron jadvallar. Elektron jadvallar interfeysi."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "002",
+        "title": "Katakchalarni formatlash. Maʻlumot turlari."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "003",
+        "title": "Katakchalarni shart asosida formatlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "004",
+        "title": "Murojaatlar. Nisbiy, absolyut, aralash murojaatlar"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "005",
+        "title": "Kitob yoki varaqqa murojaat"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "006",
+        "title": "Formulalar bilan ishlash. Avtosummadan foydalanish. Diapazonlar bilan ishlash."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "007",
+        "title": "Argumentlar oynasidan foydalanish.Yuz beradigan xatolik kodlarni aniqlash va bartaraf etish"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "008",
+        "title": "Funksiya turlari va ularni qoʻllash."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "009",
+        "title": "Matematik funksiyalar bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "010",
+        "title": "Matematik amallar va funksiyalarni qo'llash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "011",
+        "title": "Statistik funksiyalar bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "012",
+        "title": "Matematik va statik funksiyalarga oid masalalarni yechish"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "013",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "014",
+        "title": "BSB-1 [25 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "015",
+        "title": "Xatolar ustida ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "016",
+        "title": "Matnli funksiyalar"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "017",
+        "title": "Elektron jadvalda matnlar bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "018",
+        "title": "Mantiqiy funksiyalar bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "019",
+        "title": "Masalalarni yechishda mantiqiy funksiyalarni qo'llash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "020",
+        "title": "Maʻlumotlarni vizual ifodalash."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "021",
+        "title": "Masalaga mos diagramma va grafik yaratish"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "022",
+        "title": "Maʻlumotlarni tartiblash va saralash"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "023",
+        "title": "Maʻlumotlarni hususiyatiga koʻra saralash va tartiblashga oid masalalar yechish"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "024",
+        "title": "Filtrlashda srezlarni qo'llash."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "025",
+        "title": "Excel elektron jadvalida giper murojaatdan foydalanish"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "026",
+        "title": "BSB-2[25 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "uz",
+        "id": "027",
+        "title": "CHSB-1[40 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "028",
+        "title": "Internet tarixi. Protokollar"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "029",
+        "title": "WWW tarkibi"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "030",
+        "title": "Web brauzer vazifasi va turlari."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "031",
+        "title": "Web brauzer sozlamalar bo'limi bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "032",
+        "title": "Qidiruv tizimlari vazifasi, turlari."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "033",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "034",
+        "title": "Elektron pochta vazifasi, dasturlari."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "035",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "036",
+        "title": "Bulutli hosting bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "037",
+        "title": "BSB-3[25ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "038",
+        "title": "Xatolar ustida ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "039",
+        "title": "Google Drive da fayllar yaratish va cheklov qo'yish"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "040",
+        "title": "Onlayn so'rovnoma yaratish"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "041",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "042",
+        "title": "Internetdan foydalanish madaniyati"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "043",
+        "title": "Internet tarmog'ida xavfsizlikni ta'minlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "044",
+        "title": "Ijtimoiy media marketing platformalari vazifasi va ulardan maqsadli foydalanish"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "045",
+        "title": "Internet tarmog'ida YouTube kanalining vazifasi, kanal ochish"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "046",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "047",
+        "title": "BSB-4[25ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "uz",
+        "id": "048",
+        "title": "CHSB-2[40 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "049",
+        "title": "Algoritm va algoritmning tavsiflanishi."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "050",
+        "title": "Algoritm turlari."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "051",
+        "title": "Chiziqli algoritm"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "052",
+        "title": "Dasturlash tili sintaksisi"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "053",
+        "title": "Kiritish va chiqarish operatorlari"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "054",
+        "title": "Chiziqli dasturlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "055",
+        "title": "Ma'lumot turlari"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "056",
+        "title": "O'zgaruvchilarni e'lon qilish qoidalari."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "057",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "058",
+        "title": "Operatorlar va ifodalar"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "059",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "060",
+        "title": "Sodda masalalarga dastur tuzish"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "061",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "062",
+        "title": "BSB-5 [25 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "063",
+        "title": "Xatolar ustida ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "064",
+        "title": "Mantiqiy ifodalar. Mantiqiy amallar"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "065",
+        "title": "Tarmoqlanuvchi algoritmlar"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "066",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "067",
+        "title": "Shart operatori.if, else"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "068",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "069",
+        "title": "Tanlash operatori"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "070",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "071",
+        "title": "Takrorlanuvchi algoritmlar.For sikl operatori bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "072",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "073",
+        "title": "while va do while sikl operatorlari"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "074",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "075",
+        "title": "Continue, break operatorlaridan foydalanish"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "076",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "077",
+        "title": "BSB-6[25 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "uz",
+        "id": "078",
+        "title": "CHSB-3[40 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "079",
+        "title": "Kompyuter grafikasi haqida umumiy tushuncha."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "080",
+        "title": "Paint.net dasturi va uning imkoniyatlari.Paint.net dasturini ishga tushirish"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "081",
+        "title": "Paint.net dasturi uskunalar paneli tugmachalarining vazifalari"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "082",
+        "title": "Amaliy mashg’ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "083",
+        "title": "Tasvirni ishchi soha bo'ylab ko'chirish.Masshtab tugmachalari bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "084",
+        "title": "Belgilash uskunalari bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "085",
+        "title": "Uskunaga xos tezkor klavishlar qo'llash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "086",
+        "title": "Gradiyent,Mo'yqalam,O'chirg'ich uskunalari bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "087",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "088",
+        "title": "Shakllar yordamida tasvirlar yaratish"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "089",
+        "title": "BSB-7 [25 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "090",
+        "title": "Xatolar ustida ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "091",
+        "title": "Qatlamlar."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "092",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "093",
+        "title": "Matnlar bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "094",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "095",
+        "title": "Klonlashtirish.Eski rasmlarni tiklash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "096",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "097",
+        "title": "Tasvirlarni saqlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "098",
+        "title": "Amaliy mshg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "099",
+        "title": "3D effektlari bilan ishlash"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "100",
+        "title": "Amaliy mashg'ulot"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "101",
+        "title": "BSB-8 [25 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "uz",
+        "id": "102",
+        "title": "CHSB-4[40 ball]"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "001",
+        "title": "Elektron kesteler. Elektron kesteler interfeysi."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "002",
+        "title": "Ketekshelerdi formatlaw. Magliwmat túrleri."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "003",
+        "title": "Ketekshelerdi shárt boyınsha formatlaw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "004",
+        "title": "Múrájatlar. Salıstırmalı, absolyut, aralas múrájatlar"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "005",
+        "title": "Kitap yamasa betke múrájáát"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "006",
+        "title": "Formulalar menen islew. Avtosummadan paydalanıw. Diapazonlar menen islew."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "007",
+        "title": "Argumentler aynasınan paydalanıw.Júz beretuǵın qátelik kodlardı anıqlaw hám saplastırıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "008",
+        "title": "Funkciya túrleri hám olardı qollanıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "009",
+        "title": "Matematikalıq funkciyalar menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "010",
+        "title": "Matematikalıq ámeller hám funkciyalardı qollanıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "011",
+        "title": "Statistikalıq funkciyalar menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "012",
+        "title": "Matematikalıq hám statikalıq funkciyalarga tiyisli máselelerdi sheshiw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "013",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "014",
+        "title": "BSB-1 [25 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "015",
+        "title": "Qáteler ústinde islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "016",
+        "title": "Tekstli funkciyalar"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "017",
+        "title": "Elektron kestede tekstler menen islew."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "018",
+        "title": "Logikalıq funkciyalar menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "019",
+        "title": "Máselelerdi sheshiwde logikalıq funkciyalardı qollanıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "020",
+        "title": "Magliwmatlardı vizual kórsetiw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "021",
+        "title": "Máselege sáykes diagramma hám grafik jaratıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "022",
+        "title": "Maǵlıwmatlardı tártipke salıw hám saralaw"
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "023",
+        "title": "Maǵluwmatlardı ózgesheliklerine qaray tańlaw hám tártiplestiriwge tiyisli máselelerdi sheshiw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "024",
+        "title": "Filtrlewde srezlerdi qollanıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "025",
+        "title": "Excel elektron kestesinde gipermúrájáátten paydalanıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "026",
+        "title": "BSB-2[25 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 1,
+        "lang": "qr",
+        "id": "027",
+        "title": "SHSB-1[40 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "028",
+        "title": "Internet tariyxı. Protokollar"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "029",
+        "title": "WWW quramı"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "030",
+        "title": "Web-brauzer wazıypası hám túrleri."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "031",
+        "title": "Web-brauzer sazlamaları bólimi menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "032",
+        "title": "Izlew sistemalarınıń wazıypası, túrleri."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "033",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "034",
+        "title": "Elektron pochta wazıypası, programmaları."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "035",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "036",
+        "title": "Bulutlı xosting menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "037",
+        "title": "BSB-3 [25 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "038",
+        "title": "Qáteler ústinde islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "039",
+        "title": "Google Drive'da fayllar payda etiw hám sheklew qoyıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "040",
+        "title": "Onlayn sorawnama jaratıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "041",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "042",
+        "title": "Internetten paydalanıw mádeniyatı"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "043",
+        "title": "Internet tarmaǵında qáwipsizlikti támiyinlew"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "044",
+        "title": "Social media marketing platformaları wazıypası hám olardan maqsetli paydalanıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "045",
+        "title": "Internet tarmaǵında YouTube kanalınıń wazıypası, kanal ashıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "046",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "047",
+        "title": "BSB-4 [25 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 2,
+        "lang": "qr",
+        "id": "048",
+        "title": "SHSB-2[40 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "049",
+        "title": "Algoritm hám algoritmniń sipatlaması."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "050",
+        "title": "Algoritm túrleri."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "051",
+        "title": "Sızıqlı algoritm"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "052",
+        "title": "Programmalastırıw tili sintaksisi"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "053",
+        "title": "Kirgiziw hám shıǵarıw operatorları."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "054",
+        "title": "Sızıqlı programmalastırıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "055",
+        "title": "Derek túrleri"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "056",
+        "title": "Ózgeriwshilerdi járiyalaw qaǵıydaları."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "057",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "058",
+        "title": "Operatorlar hám ańlatpalar."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "059",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "060",
+        "title": "Ápiwayı máselelerge programma dúziw."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "061",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "062",
+        "title": "BSB-5 [25 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "063",
+        "title": "Qáteler ústinde islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "064",
+        "title": "Logikalıq ańlatpalar. Logikalıq ámeller"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "065",
+        "title": "Tarmaqlanıwshı algoritmler"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "066",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "067",
+        "title": "Shárt operatori.if, else"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "068",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "069",
+        "title": "Tańlaw operatorı"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "070",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "071",
+        "title": "Tákirarlanıwshı algoritmler.For cikl operatorı menen islew."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "072",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "073",
+        "title": "while hám do while cikl operatorları."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "074",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "075",
+        "title": "Continue, break operatorlarınan paydalanıw."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "076",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "077",
+        "title": "BSB-6[25 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 3,
+        "lang": "qr",
+        "id": "078",
+        "title": "SHSB-3[40 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "079",
+        "title": "Kompyuter grafikası haqqında uliwma túsinik."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "080",
+        "title": "Paint.net programması hám onıń imkaniyatları Paint.net programmasın iske túsiriw."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "081",
+        "title": "Paint.net baǵdarlaması úskeneler paneli túymeleriniń wazıypaları."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "082",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "083",
+        "title": "Súwretti jumis oblastı boylap kóshiriw.Masshtab túymeleri menen islew."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "084",
+        "title": "Belgilew úskeneleri menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "085",
+        "title": "Úskenege tán tezlik klavishlerin qollanıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "086",
+        "title": "Gradiyent,Kist,Óshirgish úskeneleri menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "087",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "088",
+        "title": "Figuralar járdeminde súwretler jaratıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "089",
+        "title": "BSB-7 [25 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "090",
+        "title": "Qáteler ústinde islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "091",
+        "title": "Qatlamlar."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "092",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "093",
+        "title": "Tekstler menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "094",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "095",
+        "title": "Klonlaw.Eski súwretlerdi tiklew."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "096",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "097",
+        "title": "Súwretlerdi saqlaw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "098",
+        "title": "Ámeliy jumıs"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "099",
+        "title": "3D effektler menen islew"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "100",
+        "title": "Ámeliy shınıǵıw"
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "101",
+        "title": "BSB-8 [25 ball]."
+    },
+    {
+        "grade": 6,
+        "quarter": 4,
+        "lang": "qr",
+        "id": "102",
+        "title": "CHSB-4[40 ball]."
     }
-  ]
+]
