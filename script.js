@@ -123,3 +123,110 @@ function renderTopics() {
         container.classList.add('show');
     }, 200);
 }
+
+
+// --- EKRANGA CHIQARISH ---
+function renderTopics() {
+    const container = document.getElementById('topicsContainer');
+    container.classList.remove('show');
+
+    setTimeout(() => {
+        container.innerHTML = "";
+
+        if (!state.class) {
+            container.innerHTML = `<p class="empty-msg">Iltimos, avval sinfni tanlang.</p>`;
+            container.classList.add('show');
+            return;
+        }
+
+        const filteredTopics = allTopicsData.filter(topic => 
+            topic.grade === state.class &&
+            topic.lang === state.lang &&
+            topic.quarter === state.quarter
+        );
+
+        if (filteredTopics.length > 0) {
+            filteredTopics.forEach(topic => {
+                // URL
+                const dynamicUrl = `tests/grade_${topic.grade}/quarter_${topic.quarter}/${topic.lang}/${topic.id}/index.html`;
+                
+                // Har bir status div uchun unikal ID yaratamiz (keyin topib olish uchun)
+                const uniqueStatusId = `status-${topic.id}`;
+
+                const card = document.createElement('div');
+                card.className = 'topic-card';
+                card.style.cursor = "pointer";
+                
+                // HTML TUZILISHI: Title -> Status (O'rtada) -> Footer
+                card.innerHTML = `
+                    <div>
+                        <div class="topic-title">${topic.title}</div>
+                        
+                        <div id="${uniqueStatusId}" class="status-badge status-loading">
+                            Tekshirilmoqda...
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="meta-info">ID: ${topic.id}</span>
+                        <span class="start-link">Boshlash &rarr;</span>
+                    </div>
+                `;
+
+                // Click hodisasi: Faqat fayl "Status: Joylangan" bo'lsa ochadi
+                card.onclick = function() {
+                    // Hozirgi statusni tekshiramiz
+                    const statusEl = document.getElementById(uniqueStatusId);
+                    if (statusEl.classList.contains('status-success')) {
+                        window.location.href = dynamicUrl;
+                    } else if (statusEl.classList.contains('status-error')) {
+                        alert("Uzr, ushbu test hali bazaga yuklanmagan.");
+                    } else {
+                        alert("Iltimos, tekshiruv tugashini kuting...");
+                    }
+                };
+
+                container.appendChild(card);
+
+                // Karta qo'shilgandan keyin darhol tekshiruvni boshlaymiz
+                checkFileStatus(dynamicUrl, uniqueStatusId);
+            });
+        } else {
+            let langText = state.lang === 'uz' ? "o'zbek" : state.lang === 'qr' ? "qoraqalpoq" : "rus";
+            container.innerHTML = `
+                <div class="empty-msg">
+                    <p>${state.class}-sinf, ${state.quarter}-chorak uchun ${langText} tilida testlar topilmadi.</p>
+                </div>`;
+        }
+        container.classList.add('show');
+    }, 200);
+}
+
+// --- YANGI: ORQA FONDA TEKSHIRISH FUNKSIYASI ---
+function checkFileStatus(url, elementId) {
+    fetch(url, { method: 'HEAD' }) // Faylni yuklab olmasdan, faqat "bormi?" deb so'raydi
+        .then(response => {
+            const el = document.getElementById(elementId);
+            if (!el) return; // Agar element topilmasa to'xtaymiz
+
+            el.classList.remove('status-loading'); // Loadingni olib tashlaymiz
+
+            if (response.ok) {
+                // 200 OK - Fayl bor
+                el.innerText = "✅ Test joylangan";
+                el.classList.add('status-success');
+            } else {
+                // 404 - Fayl yo'q
+                el.innerText = "❌ Hali joylanmagan";
+                el.classList.add('status-error');
+            }
+        })
+        .catch(error => {
+            const el = document.getElementById(elementId);
+            if (el) {
+                el.classList.remove('status-loading');
+                el.innerText = "⚠️ Xatolik";
+                el.classList.add('status-error');
+            }
+        });
+}
